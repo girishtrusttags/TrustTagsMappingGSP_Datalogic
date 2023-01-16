@@ -1,0 +1,142 @@
+apply plugin: 'com.android.application'
+
+android {
+    dataBinding {
+        enabled = true
+    }
+
+    compileSdkVersion 'Datalogic:Datalogic SDK v1:28'
+
+    defaultConfig {
+        applicationId "com.gsp.trusttags.mobile.mapping"
+        minSdkVersion 17
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    flavorDimensions "default"
+    productFlavors {
+        prod {
+            applicationIdSuffix ".prod"
+            resValue "string", "app_name", "GSP Mapping"
+        }
+        dev {
+            applicationIdSuffix ".dev"
+            resValue "string", "app_name", "GSP Dev Mapping"
+        }
+        msdev {
+            applicationIdSuffix ".msdev"
+            resValue "string", "app_name", "Mahindra Summit"
+        }
+        msprod {
+            applicationIdSuffix ".msprod"
+            resValue "string", "app_name", "Mahindra Summit"
+        }
+        mildev {
+            applicationIdSuffix ".mildev"
+            resValue "string", "app_name", "Meghmani Industries Limited"
+        }
+        milprod {
+            applicationIdSuffix ".milprod"
+            resValue "string", "app_name", "Meghmani Industries Limited"
+        }
+        moldev {
+            applicationIdSuffix ".moldev"
+            resValue "string", "app_name", "Meghmani Organics Limited"
+        }
+        molprod {
+            applicationIdSuffix ".molprod"
+            resValue "string", "app_name", "Meghmani Organics Limited"
+        }
+        wwdev {
+            applicationIdSuffix ".wwdev"
+            resValue "string", "app_name", "WilloWood"
+        }
+
+        wwprod {
+            applicationIdSuffix ".wwprod"
+            resValue "string", "app_name", "WilloWood"
+        }
+
+    }
+
+}
+
+dependencies {
+    //support libraries
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0-beta01'
+    implementation 'com.google.android.material:material:1.0.0-beta01'
+    implementation 'androidx.cardview:cardview:1.0.0-beta01'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+    //dimention sdp api
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    //retrofit api
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.5.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
+
+    //custom progressbar
+    implementation 'com.github.d-max:spots-dialog:0.7@aar'
+
+    //react native/rxjava
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.6'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+
+    //viewmodel
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0-beta01'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.0.0-beta01'
+
+    //dagger
+    implementation 'com.google.dagger:dagger:2.15'
+    implementation 'com.google.dagger:dagger-android:2.35.1'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.15'
+
+    //Lottie Animation
+    implementation 'com.airbnb.android:lottie:2.8.0'
+
+    //CountryCodePicker
+    implementation 'com.hbb20:ccp:2.2.4'
+
+    //Glide image api
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+
+    //Barcode Scanner
+    implementation project(':barcode-reader')
+    implementation 'com.google.android.gms:play-services-vision:18.0.0'
+
+    //Send Internet Off Mail
+    implementation 'com.sun.mail:android-mail:1.5.5'
+    implementation 'com.sun.mail:android-activation:1.5.5'
+
+    //Floating Button
+    implementation 'com.github.clans:fab:1.6.4'
+
+    //Butter-knife
+    implementation 'com.jakewharton:butterknife:10.2.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
+
+}

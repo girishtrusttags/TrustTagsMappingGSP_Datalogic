@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.trust_tag.BaseActivity">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/activity_setting_txt_about_us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_about_us"
+            android:drawableEnd="@drawable/ic_arrow_end"
+            android:drawablePadding="@dimen/_16sdp"
+            android:padding="@dimen/_12sdp"
+            android:text="@string/text_setting_about_us"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/activity_setting_txt_contact_us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_contactus"
+            android:drawableEnd="@drawable/ic_arrow_end"
+            android:drawablePadding="@dimen/_16sdp"
+            android:padding="@dimen/_12sdp"
+            android:text="@string/text_setting_contact_us"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/activity_setting_txt_faq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_faq"
+            android:drawableEnd="@drawable/ic_arrow_end"
+            android:drawablePadding="@dimen/_16sdp"
+            android:padding="@dimen/_12sdp"
+            android:text="@string/text_setting_faq"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/activity_setting_txt_privacy_policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_policy"
+            android:drawableEnd="@drawable/ic_arrow_end"
+            android:drawablePadding="@dimen/_16sdp"
+            android:padding="@dimen/_12sdp"
+            android:text="@string/text_setting_privacy_policy"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/activity_setting_txt_term_usage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_terms"
+            android:drawableEnd="@drawable/ic_arrow_end"
+            android:drawablePadding="@dimen/_16sdp"
+            android:padding="@dimen/_12sdp"
+            android:text="@string/text_setting_terms_of_usage"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,137 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'kotlin-android-extensions'
+//apply plugin: 'kotlin-android'
+apply plugin: 'com.jfrog.artifactory'
+apply plugin: 'maven-publish'
+
+def packageName = 'info.androidhive'
+def libraryVersion = '1.1.5'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+tasks.withType(org.gradle.api.tasks.javadoc.Javadoc) {
+    options.encoding = 'UTF-8'
+}
+
+//publishing {
+//    publications {
+//        aar(MavenPublication) {
+//            groupId packageName
+//            version = libraryVersion
+//            artifactId project.getName()
+//
+//            pom.withXml {
+//                def dependencies = asNode().appendNode('dependencies')
+//                configurations.getByName("releaseCompileClasspath").getResolvedConfiguration().getFirstLevelModuleDependencies().each {
+//                    def dependency = dependencies.appendNode('dependency')
+//                    dependency.appendNode('groupId', it.moduleGroup)
+//                    dependency.appendNode('artifactId', it.moduleName)
+//                    dependency.appendNode('version', it.moduleVersion)
+//                }
+//            }
+//
+//            task androidJavadocs(type: Javadoc) {
+//                failOnError false
+//                source = android.sourceSets.main.java.srcDirs
+//                // encoding = 'UTF-8'
+//                classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+//            }
+//
+//            task androidJavadocsJar(type: Jar, dependsOn: androidJavadocs) {
+//                classifier = 'javadoc'
+//                // encoding = 'UTF-8'
+//                from androidJavadocs.destinationDir
+//            }
+//
+//            task androidSourcesJar(type: Jar) {
+//                classifier = 'sources'
+//                from android.sourceSets.main.java.sourceFiles
+//            }
+//
+//            artifacts {
+//                archives androidSourcesJar
+//                archives androidJavadocsJar
+//            }
+//
+//            // Tell maven to prepare the generated "*.aar" file for publishing
+//            artifact("$buildDir/outputs/aar/${project.getName()}-release.aar")
+//            artifact androidJavadocsJar
+//            artifact androidSourcesJar
+//        }
+//    }
+//}
+
+//artifactory {
+//    contextUrl = 'http://localhost:8081/artifactory'
+//    publish {
+//        repository {
+//            repoKey = 'androidhive-maven'
+//            username = artifactory_username
+//            password = artifactory_password
+//        }
+//        defaults {
+//            publications('aar')
+//            publishArtifacts = true
+//            properties = ['qa.level': 'basic', 'dev.team': 'core']
+//            publishPom = true
+//        }
+//    }
+//}
+
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/notice'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license'
+        exclude 'META-INF/license.txt'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0-alpha4', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    implementation 'androidx.appcompat:appcompat:1.0.0-beta01'
+    implementation 'com.google.android.material:material:1.0.0-beta01'
+    testImplementation 'junit:junit:4.12'
+
+    implementation 'com.google.android.gms:play-services-vision:11.0.2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0-beta01'
+
+    //dimention sdp api
+    implementation 'com.intuit.sdp:sdp-android:1.0.5'
+    implementation "androidx.core:core-ktx:1.6.0"
+
+//    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+
+}
+repositories {
+    mavenCentral()
+}

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transperent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/_12sdp"
+        app:cardCornerRadius="@dimen/_12sdp"
+        app:cardElevation="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_create_shipper_sku"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/_14sdp" />
+
+            <Spinner
+                android:id="@+id/activity_create_shipper_spinner_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/text_create_shipper_batch_no"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/_14sdp" />
+
+            <Spinner
+                android:id="@+id/activity_create_shipper_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="From Date"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/txtStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:hint="Select From Date"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/bg_gray_border"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="To Date"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/txtEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:hint="Select To Date"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/bg_gray_border"/>
+
+            <TextView
+                android:id="@+id/dialog_change_batch_txt_filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_scan_remove"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="Filter"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.trust_tag.BaseActivity">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/activity_scanning_card_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardElevation="@dimen/_10sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_background_with_corner"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_16sdp"
+                    android:layout_toEndOf="@+id/activity_scanning_img_logo"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/activity_scanning_ll_batch_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/scanning_header"
+                            android:layout_weight="1"
+                            android:text="Batch No" />
+
+                        <TextView
+                            android:id="@+id/activity_scanning_txt_batch_no"
+                            style="@style/scanning_header"
+                            android:layout_width="wrap_content"
+                            android:paddingRight="10dp"
+                            android:text="kj" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/activity_scanning_ll_total_box"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/scanning_header"
+                            android:layout_weight="1"
+                            android:text="Shipper Size" />
+
+                        <TextView
+                            android:id="@+id/activity_scanning_txt_total_box"
+                            style="@style/scanning_header"
+                            android:layout_width="wrap_content"
+                            android:paddingRight="10dp"
+                            android:text="kj" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/activity_scanning_ll_second_inner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/scanning_header"
+                            android:layout_weight="1"
+                            android:text="Second Inner" />
+
+                        <TextView
+                            android:id="@+id/activity_scanning_txt_second_inner"
+                            style="@style/scanning_header"
+                            android:layout_width="wrap_content"
+                            android:paddingRight="10dp"
+                            android:text="kj" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/activity_scanning_ll_first_inner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/scanning_header"
+                            android:layout_weight="1"
+                            android:text="First Inner" />
+
+                        <TextView
+                            android:id="@+id/activity_scanning_txt_first_inner"
+                            style="@style/scanning_header"
+                            android:layout_width="wrap_content"
+                            android:paddingRight="10dp"
+                            android:text="kj" />
+                    </LinearLayout>
+
+<!--
+                    <LinearLayout
+                        android:id="@+id/activity_scanning_ll_scanned_box"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/scanning_header"
+                            android:layout_weight="1"
+                            android:text="Scannned Product" />
+
+                        <TextView
+                            android:id="@+id/activity_scanning_txt_scanned_box"
+                            style="@style/scanning_header"
+                            android:layout_width="wrap_content"
+                            android:paddingRight="10dp"
+                            android:text="kj" />
+                    </LinearLayout>
+-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/activity_scanning_btn_scan_shipper"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_background_with_corner"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:text="@string/text_scanning_scan_shipper"
+                            android:textColor="@color/white"
+                            android:visibility="gone"
+                            tools:ignore="ButtonStyle" />
+
+                        <Button
+                            android:id="@+id/activity_scanning_btn_scan_product"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_background_with_corner"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:text="@string/text_scanning_scan_product"
+                            android:textColor="@color/white"
+                            android:visibility="gone"
+                            tools:ignore="ButtonStyle" />
+
+                        <Button
+                            android:id="@+id/activity_scanning_btn_change_batch"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_background_with_corner"
+                            android:paddingStart="@dimen/_8sdp"
+                            android:paddingEnd="@dimen/_8sdp"
+                            android:text="@string/text_scanning_change_batch"
+                            android:textColor="@color/white"
+                            tools:ignore="ButtonStyle" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/activity_scanning_txt_product_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_scanning_card_top"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:text="@string/first_level_list"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/activity_scanning_recycler_product_listing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/activity_scanning_txt_scan_delete"
+            android:layout_below="@+id/activity_scanning_txt_product_title"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/activity_scanning_txt_scan_delete"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:background="@drawable/shape_background_with_corner"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/text_scanning_to_remove_click_here"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/activity_scanning_action_button_update"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end|bottom"
+            fab:fab_colorNormal="@android:color/transparent"
+            fab:fab_colorPressed="@color/theme_color"
+            fab:fab_colorRipple="@android:color/transparent"
+            fab:fab_shadowColor="@android:color/transparent"
+            fab:fab_showShadow="true"
+            fab:menu_backgroundColor="@color/black_semi_transparent"
+            fab:menu_colorNormal="@color/color_submit_start"
+            fab:menu_colorPressed="@color/theme_color"
+            fab:menu_fab_label=""
+            fab:menu_labels_colorNormal="@android:color/transparent"
+            fab:menu_labels_colorPressed="@color/dark_white"
+            fab:menu_labels_colorRipple="@color/theme_color"
+            fab:menu_labels_ellipsize="end"
+            fab:menu_labels_maxLines="-1"
+            fab:menu_labels_position="left"
+            fab:menu_labels_showShadow="true"
+            fab:menu_labels_singleLine="true"
+            fab:menu_openDirection="up"
+            android:visibility="gone">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/activity_scanning_action_button_remove_cases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/remove_cases"
+                android:visibility="gone"
+                fab:fab_colorNormal="@color/white"
+                fab:fab_colorPressed="@color/dark_white"
+                fab:fab_colorRipple="@color/theme_color"
+                fab:fab_label="@string/remove_product"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/activity_scanning_action_button_discard_shipper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/remove_cases"
+                fab:fab_colorNormal="@color/white"
+                fab:fab_colorPressed="@color/dark_white"
+                fab:fab_colorRipple="@color/theme_color"
+                fab:fab_label="@string/discard_case"
+                fab:fab_size="mini" />
+
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+        <TextView
+            android:id="@+id/activity_main_txt_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/transperent"
+            android:elevation="@dimen/_2sdp"
+            android:text="20"
+            android:textColor="@color/orrange"
+            android:textSize="@dimen/_30sdp" />
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,164 @@
+<resources>
+   <!-- <string name="app_name">GSP Mapping</string>-->
+
+    <string name="cancel">Cancel</string>
+    <string name="exit">Exit</string>
+    <string name="ok">OK</string>
+    <string name="login">Login</string>
+    <string name="enter_phone_number_please">Please enter phone number</string>
+    <string name="enter_phone_number">Enter phone number</string>
+    <string name="internet_error">Please check your internet connection and try again later.</string>
+    <string name="please_wait">Please wait</string>
+    <string name="remaining">remaining</string>
+    <string name="fill_verification_code">Please fill Verification code first.</string>
+    <string name="enter_valid_otp_number">Please enter valid OTP number.</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="clear">Clear</string>
+    <string name="time_out_msg">Connection Time Out!!!</string>
+    <string name="server_error_msg">Server Connection Error!!!</string>
+    <string name="already_login_with_other_device">You have an active login with other device. Do you wish to re-login with this device?</string>
+
+    <string name="trust">Trust</string>
+    <string name="tags">Tags</string>
+
+    <string name="product_list">Product List</string>
+    <string name="more_to_scan">More to scan</string>
+    <string name="scan_and_remove">Scan &amp; Remove</string>
+    <string name="packed">Packed</string>
+
+ <string name="first_level_list">First Level Scan Code List</string>
+    <!--Screen Title-->
+    <string name="text_title_dashboard">Dashboard</string>
+    <string name="text_title_start_shipper_scanning">Start Shipper Scanning</string>
+    <string name="text_title_scanning">Scanning</string>
+    <string name="text_title_scanned_batch">Scanned Shipper</string>
+
+    <!--Navigation Title-->
+    <string name="text_nav_title_dashboard">Dashboard</string>
+    <string name="text_nav_title_history">History</string>
+    <string name="text_nav_title_qa_panel">QA Panel</string>
+    <string name="text_nav_title_settings">Settings</string>
+    <string name="text_nav_title_logout">Logout</string>
+
+    <!--Login Screen-->
+    <string name="text_login_email_hint">Please enter your email address</string>
+    <string name="text_login_password_hint">Please enter your password</string>
+    <string name="text_login_empty_email">Please enter email address</string>
+    <string name="text_login_invalid_email">Please enter correct E-mail address</string>
+    <string name="text_login_empty_password">Please enter correct password</string>
+    <string name="text_login_remember_me">Remember Me</string>
+    <string name="text_login_forget_password">Forgot Password?</string>
+    <string name="text_login_submit">Login</string>
+
+    <!--Forgot Password Screen-->
+    <string name="text_forgot_password_title">Forgot Your Password</string>
+    <string name="text_forgot_password_email_hint">Email</string>
+
+    <!--Create Shipper Screen-->
+    <string name="text_create_shipper_select_batch">Please select Batch No</string>
+    <string name="text_create_shipper_sku">Product Name:</string>
+    <string name="text_create_shipper_batch_no">Batch No:</string>
+    <string name="text_create_shipper_start_scanning">START SCANNING</string>
+    <string name="text_create_shipper_create_shipper">Create Shipper</string>
+    <string name="text_create_shipper_select_batch_no">Select Batch No : </string>
+    <string name="text_create_shipper_change">Change</string>
+    <string name="text_inline_mapping">Inline Mapping</string>
+    <!--Scanning Screen-->
+    <string name="text_scanning_shipper_already_allocated">Shipper already allocated.</string>
+    <string name="text_scanning_scan_product_first">No Products available to remove</string>
+    <string name="text_scanning_batch_no">Batch No. : %1$s</string>
+    <string name="text_scanning_shipper_size">Shipper Size : %1$s</string>
+    <string name="text_scanning_scanned_product">Scanned Product : %1$s</string>
+    <string name="text_scanning_product_name">Product : %1$s</string>
+    <string name="text_scanning_scan_shipper">Scan Shipper</string>
+    <string name="text_scanning_change_batch">Change Batch</string>
+    <string name="text_scanning_scan_product">Scan Product</string>
+    <string name="text_scanning_preview">Preview</string>
+    <string name="text_scanning_to_remove_click_here">To remove any item. Click here</string>
+    <string name="text_scanning_shipper_size_new">Shipper Size : %1$s</string>
+    <string name="text_scanning_first_inner_size">First Inner Size : </string>
+    <string name="text_scanning_second_inner_size">Second Inner Size : </string>
+    <string name="text_scanning_no_of_inner_shipper_size">No of Inner in shipper : </string>
+
+    <!--History Screen-->
+    <string name="text_history_batch_no">Batch No : %1$s</string>
+    <string name="text_history_total_shipper">Total Shipper : %1$s</string>
+    <string name="text_history_date">Date : %1$s</string>
+    <string name="text_history_scanned_shipper">Scanned Shipper : %1$s</string>
+    <string name="text_history_scanned_today">Batch Search</string>
+    <string name="text_history_shipper_id">Shipper ID : %1$s</string>
+    <string name="text_history_shipper_completed">Status : Completed</string>
+    <string name="text_history_shipper_pending">Status : Pending</string>
+
+    <!--Setting Screen-->
+    <string name="text_setting_about_us">About us</string>
+    <string name="text_setting_contact_us">Contact us</string>
+    <string name="text_setting_faq">FAQ’s</string>
+    <string name="text_setting_privacy_policy">Privacy policy</string>
+    <string name="text_setting_terms_of_usage">Terms of usage</string>
+
+    <!--OPT Verify-->
+    <string name="text_opt_verify_title">OTP has been sent on your mobile number.</string>
+    <string name="submit_cap">SUBMIT</string>
+    <string name="didnt_receive_code"><u>Resend OTP</u></string>
+    <string name="login_as_guest"><u>Login as guest user</u></string>
+    <string name="get_started">Get Started</string>
+    <string name="or">Or</string>
+    <string name="sign_in">Sign In</string>
+    <string name="something_went_wrong_fix_soon">Oops Something went wrong, we will fix it soon...</string>
+    <string name="verification_code_not_matched">Verification code not matched. Please try again.</string>
+
+    <string name="sure_to_logout">Are you sure you want to Logout?</string>
+    <string name="sure_to_discard_shipper">Are you sure you want to discard shipper?</string>
+    <string name="sure_to_exit">Are you sure want to exit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="save">Save</string>
+    <string name="qr_scan">QR Scan</string>
+
+    <string name="remove_product">Remove Product</string>
+    <string name="discard_case">Discard Case</string>
+
+    <!--QA Panel-->
+    <!--Dashboard-->
+    <string name="text_qa_dashboard_remap">Remap</string>
+    <string name="text_qa_dashboard_reprint">Reprint Code</string>
+    <string name="text_qa_dashboard_stock_reconciliation">Stock Reconciliation</string>
+
+    <!--Scanning Screen-->
+    <string name="text_scanning_title">Shipper Scan</string>
+    <string name="qa_dashboard">QA Panel</string>
+    <string name="sure_to_remap_shipper">Are you sure you want to clear mapping?</string>
+
+    <!--Remap Screen-->
+    <string name="text_remap_title">Remap</string>
+    <string name="text_remap_scan_and_remove">CONFIRM REMAPPING</string>
+    <string name="text_remap_send_mail">SEND MAIL</string>
+
+    <!--Reprint Screen-->
+    <string name="text_reprint_title">Reprint</string>
+    <string name="text_reprint_send_mail_and_print">SEND MAIL &amp; PRINT CODE</string>
+    <string name="text_reprint_scan_shipper">SCAN SHIPPER</string>
+    <string name="text_reprint_scan_sku_code">SCAN SKU CODE</string>
+    <string name="text_reprint_shipper_code">Shipper Code</string>
+
+
+    <string name="text_reprint_shipper">Reprint Shipper</string>
+    <string name="text_reprint_first_level">Reprint 1st Level Inner</string>
+    <string name="text_reprint_second_level">Reprint 2nd Level Inner</string>
+    <string name="text_reprint_sku_code">SKU CODE</string>
+    <string name="text_reprint_code">Code</string>
+    <string name="send_code_email">Email Sent - Kindly take a print</string>
+    <string name="text_reprint_your_code">Your QR Code</string>
+
+    <string name="text_login_forget_password_new">Forgot Password</string>
+
+    <string name="contact_admin">Kindly contact your administrator to change password</string>
+
+    <string name="discard_shipper">Discard Shipper</string>
+    <string name="discard_shipper_message">Do you want to Discard Shipper or Resume Mapping?</string>
+    <string name="mapping_completed">Mapping Completed</string>
+
+   <string name="text_enter_line_no">Please enter Line No.</string>
+</resources>

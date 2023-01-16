@@ -1,0 +1,51 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/raw_history_product_relative_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:background="@drawable/ic_rounded_image">
+
+            <ImageView
+                android:id="@+id/raw_history_product_img_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_shortage_small"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/raw_history_product_linear_middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_toEndOf="@+id/raw_history_product_relative_product"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/raw_history_product_txt_batch_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SKU Code 1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

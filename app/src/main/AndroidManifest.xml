@@ -1,0 +1,156 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gsp.trusttags.mobile.mapping">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="com.gsp.trusttags.mobile.mapping.MyApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_center_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_center_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeNoActionbarDisplay"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup"
+        >
+
+        <activity
+            android:name="com.gsp.trusttags.mobile.mapping.ActivitySplash"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppThemeNoActionbarFullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.gsp.trusttags.mobile.mapping.ActivityLogin"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbarFullScreen"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.gsp.trusttags.mobile.mapping.ActivityDashboard"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.gsp.trusttags.mobile.mapping.ActivitySetting"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.gsp.trusttags.mobile.mapping.ActivityHistory"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name="com.gsp.trusttags.mobile.mapping.ActivityScanning"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.gsp.trusttags.mobile.mapping.ActivityCreateShipper"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.gsp.trusttags.mobile.mapping.ActivityScanShipper"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.gsp.trusttags.mobile.mapping.ActivityScanAndDelete"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.gsp.trusttags.mobile.mapping.ActivityShipperListing"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name="com.gsp.trusttags.mobile.mapping.ActivityScanProductQR"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbarLogin"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".ActivityQADashboard"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".ActivityQARemap"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".ActivityQAScan"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".ActivityQAReprint"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="adjustPan" />
+
+               <!-- <uses-library
+                    android:name="com.datalogic.device"
+                    android:required="true" />-->
+
+        <activity
+            android:name="com.gsp.trusttags.mobile.mapping.ActivityScanFirstLevel"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.gsp.trusttags.mobile.mapping.ActivityScanSecondLevel"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.gsp.trusttags.mobile.mapping.ActivityScanningInLine"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="false" />
+
+    </application>
+
+</manifest>

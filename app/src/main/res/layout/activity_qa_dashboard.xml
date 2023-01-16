@@ -1,0 +1,101 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.trust_tag_business.ActivityQADashboard">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="qaDashboardViewModel"
+            type="com.gsp.trusttags.mobile.mapping.viewModel.QADashboardViewModel" />
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transperent"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:onClick="@{(v)-> qaDashboardViewModel.onClickRemap()}"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_40sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_40sdp"
+                    android:text="@string/text_qa_dashboard_remap"
+                    android:textColor="@color/theme_color"
+                    android:textSize="@dimen/_20sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:onClick="@{(v) -> qaDashboardViewModel.onClickReprint()}"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_40sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_40sdp"
+                    android:text="@string/text_qa_dashboard_reprint"
+                    android:textColor="@color/theme_color"
+                    android:textSize="@dimen/_20sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                 android:layout_height="@dimen/_150sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:onClick="@{(v) -> qaDashboardViewModel.onClickStockReconciliation()}"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_40sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_40sdp"
+                    android:text="@string/text_qa_dashboard_stock_reconciliation"
+                    android:textColor="@color/theme_color"
+                    android:textSize="@dimen/_20sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>
